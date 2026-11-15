@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "deviceData": {
+      "latest": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid == 'EQxN9ITVptMuEoxNvWDKtgF8Our2'"
+      }
+    },
+    "waterMonitor": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    }
+  }
+}
